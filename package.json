@@ -1,0 +1,9 @@
+{
+  "name": "learn-playwright-batch",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node chapter_01_Basics/01_basic.js",
+    "step": "node chapter_01_Basics/02_step_by_step.js"
+  }
+}
