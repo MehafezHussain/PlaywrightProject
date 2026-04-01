@@ -1,0 +1,9 @@
+let age="Hussain";
+let isstudent=true;
+let score=95.5;
+let grade='A';
+let name="Hussain";
+let pi=3.14159;
+let isActive=false;
+let nullValue=null;
+let undefinedValue=undefined;

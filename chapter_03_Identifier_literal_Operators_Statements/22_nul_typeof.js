@@ -1,0 +1,6 @@
+let searchResults = null;
+console.log(searchResults); // Output: "object
+// In JavaScript, the typeof operator returns "object" for null values, which is a known quirk of the language. This is because null is considered a primitive value that represents the intentional absence of any object value. However, it is not an object itself, and this behavior can sometimes lead to confusion when checking for null values using typeof. To check if a variable is null, it is recommended to use a strict equality comparison (===) instead of relying on typeof.
+let declaredVariable;
+console.log(declaredVariable); // Output: "undefined"
+// In JavaScript, when a variable is declared but not assigned a value, it is automatically initialized with the value undefined. This means that if you declare a variable without assigning it a value, it will have the value undefined by default. When you log this variable to the console, it will output "undefined". This behavior is important to understand when working with variables in JavaScript, as it can help you avoid errors and unexpected results in your code.

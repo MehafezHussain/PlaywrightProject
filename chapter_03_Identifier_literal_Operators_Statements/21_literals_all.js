@@ -1,0 +1,31 @@
+let count=0;
+let message="Hello, world!";
+let isActive=true;
+let pi=3.14159; 
+let grade='A';
+let name="Hussain";
+let nullValue=null;
+let undefinedValue=undefined;   
+let negativeNumber=-42;
+let largeNumber=1e6;    
+let zero=0;
+let emptyString="";
+let booleanFalse=false;
+let booleanTrue=true;   
+let hexadecimal=0xFF;
+let octal=0o77;
+let binary=0b1010;
+let million=1_000_000;
+let billion=1_000_000_000;
+let smallNumber=1e-6;
+let bigNumber=1e+6;
+let singleQuote='Single quote string';
+let doubleQuote="Double quote string";
+let backtick=`Backtick string with interpolation: ${name}`;
+let math=`Math operations: 2 + 2 = ${2 + 2}`;
+let multiLineString=`This is a 
+multi-line string 
+using backticks.`;
+let path="C:\\Users\\Hussain\\Documents";
+let url="https://www.example.com";
+let email="hussain@example.com";
