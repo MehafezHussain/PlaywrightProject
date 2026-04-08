@@ -5,5 +5,8 @@
   "scripts": {
     "start": "node chapter_01_Basics/01_basic.js",
     "step": "node chapter_01_Basics/02_step_by_step.js"
+  },
+  "dependencies": {
+    "playwright": "^1.59.0"
   }
 }
