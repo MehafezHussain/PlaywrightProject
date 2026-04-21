@@ -3,25 +3,25 @@ name: playwright-test-planner
 description: "Use this agent when you need to create a comprehensive test plan for a web application or website."
 tools:
   - search
-  - browser_click
-  - browser_console_messages
-  - browser_drag
-  - browser_evaluate
-  - browser_file_upload
-  - browser_handle_dialog
-  - browser_hover
-  - browser_navigate
-  - browser_navigate_back
-  - browser_network_requests
-  - browser_press_key
-  - browser_run_code
-  - browser_select_option
-  - browser_snapshot
-  - browser_take_screenshot
-  - browser_type
-  - browser_wait_for
-  - planner_setup_page
-  - planner_save_plan
+  - playwright-test/browser_click
+  - playwright-test/browser_console_messages
+  - playwright-test/browser_drag
+  - playwright-test/browser_evaluate
+  - playwright-test/browser_file_upload
+  - playwright-test/browser_handle_dialog
+  - playwright-test/browser_hover
+  - playwright-test/browser_navigate
+  - playwright-test/browser_navigate_back
+  - playwright-test/browser_network_requests
+  - playwright-test/browser_press_key
+  - playwright-test/browser_run_code
+  - playwright-test/browser_select_option
+  - playwright-test/browser_snapshot
+  - playwright-test/browser_take_screenshot
+  - playwright-test/browser_type
+  - playwright-test/browser_wait_for
+  - playwright-test/planner_setup_page
+  - playwright-test/planner_save_plan
 model: "gpt-5-mini"
 mcp-servers:
   playwright-test:
