@@ -39,14 +39,14 @@ person2.eat();
 person2.work();
 
 
-class car {
+class Car {
     constructor(make, model, year) {
         this.make = make;
         this.model = model;
         this.year = year;
     }
 }
-let car1 = new car("Toyota", "Camry", 2020);
+let car1 = new Car("Toyota", "Camry", 2020);
 console.log(car1.make);
 
 
@@ -184,7 +184,7 @@ console.log(hussain.getChild1()); // Outputs: New Child1
 console.log(hussain.getChild2()); // Outputs: New Child2
 
 
-class car{
+class CarEngine {
     #engineNumber; //private field
     constructor(make, model, engineNumber){
         this.make=make;
@@ -194,14 +194,11 @@ class car{
     getEngineNumber(){ //public method to access private field
         return this.#engineNumber;
     }
-    #startEngine(){ //private method
-        console.log(`Starting engine number ${this.#engineNumber}`);
-    }
     setEngineNumber(engineNumber){ //public method to modify private field
         this.#engineNumber=engineNumber;
     }
 }
-let car2=new car("Toyota","Camry","ENG12345");
+let car2=new CarEngine("Toyota","Camry","ENG12345");
 console.log(car2.getEngineNumber()); // Outputs: ENG12345
 car2.setEngineNumber("ENG67890");
 console.log(car2.getEngineNumber()); // Outputs: ENG67890
@@ -225,12 +222,35 @@ class ICICIBank {
     }
 }
 
-let Hussain=new ICICIBank("ACC12345", 1000);
-console.log(Hussain.getBalance());
-Hussain.setBalance(2000, false); // Attempt to update balance without cashier privileges
-console.log(Hussain.getBalance());
+let hussainAccount = new ICICIBank("ACC12345", 1000);
+console.log(hussainAccount.getBalance());
+hussainAccount.setBalance(2000, false); // Attempt to update balance without cashier privileges
+console.log(hussainAccount.getBalance());
 
 let hussain_father=new ICICIBank("ACC67890", 5000);
 console.log(hussain_father.getBalance());
 hussain_father.setBalance(6000, true);
 console.log(hussain_father.getBalance());
+
+
+class BasePage {
+    constructor(pageName) {
+        this.pageName = pageName;
+    }
+    open() {
+        console.log(`Opening ${this.pageName} page.`);
+    }
+    close() {
+        console.log(`Closing ${this.pageName} page.`);
+    }
+}
+class LoginPage extends BasePage {
+    constructor() {
+        super("Login");
+    }
+}
+
+let homePage = new LoginPage("Home");
+homePage.open();
+homePage.close();
+
